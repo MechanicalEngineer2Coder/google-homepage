@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 
+<style>
 
-<html>
-    <link rel="stylesheet" href="mystyle.css">
+    p, i, img, button input{
+        padding: 10px;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: lighter;
+    }
+</style>
+
+<html style="height: 100%;">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <header style="display: inline-block;">
-        <div style="width: 50%; display: inline-flex; float: left;">
-            <p style="">Store</p>
-            <p style="">About</p>
+    <header style="height: 10%; width: 100%; top: 0px; left: 0px; display: inline-flex; flex-direction: row;">
+        <div style="width: 50%; display: inline-flex; flex-direction: row; float: left;">
+            <p>About</p>
+            <p>Store</p>
         </div>
         <div style="width: 50%; float:right;">
-            <div style=" display: inline-flex; float: right;">
-                <p style="">Gmail</p>
-                <p style="" >Images</p>
-                <i style="margin-top: auto; margin-bottom: auto;" class="material-icons">apps</i>
-                <p style="background-color: dodgerblue; color: white; border-radius: 5pt;">Sign In</p>
-            </div>
+            <p style="float: right; background-color: dodgerblue; color: white; align-self: flex-end;">Sign In</p>
+            <i style="float: right; margin-top: auto; margin-bottom: auto;" class="material-icons">apps</i>
+            <p style="float: right;">Images</p>
+            <p style="float: right;">Gmail</p>
         </div>
     </header>
 
     <body style="height: 80%; display: flex; flex-direction: column; justify-content: center;">
         <img style="margin: auto;" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> <br>
-        <input type="text" style="width: 25%; align-self: center;">
+        <input type="text" style="width: 40%; align-self: center; border-radius: 15%;;">
         <div style="display: flex; flex-direction: row; justify-content: center;">
-            <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
+            <div style="padding: 10px;">
+                <button style="padding: 10px;">Google Search</button>
+            </div>
+            <div style="padding: 10px;">
+                <button style="padding: 10px;">I'm Feeling Lucky</button>
+            </div>  
         </div>
         <p style="font-family: Arial, Helvetica, sans-serif; font-size: medium; align-self: center;"><a style="color: red;">New!</a> Get qualified for in-demand jobs with <a target="_blank" href="https://www.google.com/url?q=https://www.grow.google/certificates/%3Futm_source%3DgDigital%26utm_medium%3Demprohpp%26utm_campaign%3Dcerts%26utm_content%3Dapril%26utm_term%3D2&source=hpp&id=19024124&ct=3&usg=AFQjCNFoI6EjRfsVIi_ccrr1iZB2yyS8SA&sa=X&ved=0ahUKEwjk4ZSJ0qbwAhX4B50JHae2COIQ8IcBCBA">Google Career Certificates</a></p>
     </body>
 
-        <foot style="display: flex; flex-direction: row; justify-content: space-evenly;">
-            <p style=";">Advertising</p>
-            <p style=";">Business</p>
-            <p style=";">How Search Works</p>
-            <p style=";" >Carbon neutral since 2007</p>
-            <p style=";">Settings</p>
-            <p style=";">Terms</p>
-            <p style=";">Privacy</p>
-        </foot>
+    <footer style="position: absolute; left: 0px; bottom:0px; width:100%; display: inline-flex; flex-direction: row; background-color: lightgray; justify-content: space-between;">
+        <div style="display: inline-flex; flex-direction: row; float: left;">
+            <p style="text-align: left;">Advertising</p>
+            <p style="text-align: left;">Business</p>
+            <p style="text-align: left;">How Search works</p>
+        </div>
+        <div style="display: inline-flex; flex-direction: row; align-self:center;">
+            <p style="text-align: center;">Carbon neutral since 2007</p>
+        </div>
+        <div style="display: inline-flex; flex-direction: row; float: right;">
+            <p style="">Privacy</p>
+            <p style="">Terms</p>
+            <p style="">Settings</p>
+        </div>
+    </footer>
     
 </html>
